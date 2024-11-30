@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirect</title>
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="refresh" content="0; url=https://sh.search-amt.co/9c210b3a-71a3-4cbf-a872-8f60d174761a?ch=101375&q=крем+морщины">
+    <script type="text/javascript">
+        // Скрываем реферер несколькими способами
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+        
+        // Функция для редиректа
+        function redirect() {
+            // Замените YOUR_URL на нужный URL
+            var destinationURL = 'https://sh.search-amt.co/9c210b3a-71a3-4cbf-a872-8f60d174761a?ch=101375&q=крем+морщины';
+            
+            // Создаем ссылку с атрибутом rel="noreferrer"
+            var link = document.createElement('a');
+            link.href = destinationURL;
+            link.rel = 'noreferrer';
+            
+            // Программно кликаем по ссылке
+            document.body.appendChild(link);
+            link.click();
+            
+            // Удаляем ссылку
+            document.body.removeChild(link);
+        }
+        
+        // Запускаем редирект при загрузке страницы
+        window.onload = redirect;
+    </script>
+</head>
+<body>
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=https://sh.search-amt.co/9c210b3a-71a3-4cbf-a872-8f60d174761a?ch=101375&q=крем+морщины">
+    </noscript>
+    Redirecting...
+</body>
+</html>
